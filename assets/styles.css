@@ -98,17 +98,49 @@ body{
     display:flex;
     flex-wrap:wrap;
 }
+#navbar,#main-header,#menu{
+    display:block;
+}
+#menu{
+     font-size: 1rem;
+     margin-top: 1rem;
+     list-style-type:none;
+     background-color:var(--darkblue);
+     text-align:center;
+     height: 98%;
+     
+     }
+#menu a {
+    display: block;
+    color: var(--lighter);
+    padding: 0.8rem 1rem;
+    border-bottom: 1px dotted var(--light);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: background-color 0.2s ease-out;
+}
+
+#menu a:hover {
+    background-color: lightblue;
+    font-weight: bold;
+    color: var(--dark);
+}
+#burger{
+    display: none;
+}
 #navbar{
-    width: 20%;
-    flex: 1 0;
+    width: 30%;
+    flex: 1 0 30%;
+    border:none;
 }
 #main-doc{
-    width: 80%;
-    flex: 1 0;
+    width: 70%;
+    flex: 1 1 70%;
 }
 #footer{
     width: 100%;
     flex: 1 0;
+    margin-top: 2rem;
 }
 
 

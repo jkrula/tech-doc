@@ -1,5 +1,5 @@
 /* resets */
-html,body,nav,header,h1,h2,i,ul,li,a,pre,code,main,p,code,section,footer{
+html,body,nav,header,h1,h2,h3,h4,i,ul,li,a,pre,code,main,p,code,section,footer{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -109,12 +109,36 @@ pre{
 }
 
 #footer{
-
-    padding: 1rem;
+    padding: 1rem 0 0.2rem;
     background: var(--dark);
     color: var(--lighter);
-
+}
+#footer a{
+    color: var(--light-main);
+    border-bottom: 1px dotted var(--light-main);
+    text-decoration:none;
+    font-weight:normal;
+}
+#footer a:hover{
+    color: var(--white);
+    font-weight: bold;
+}
+#footer h3{
+    text-align:center;
+    
+}
+#footer .container{
+    display: flex;   
+    justify-content: space-evenly;
+}
+#footer h4{
+    font-weight:normal;
+    text-transform: uppercase;
 }
 
-
-
+.group li{
+    padding: 0.125rem;
+    font-size: 0.9rem;
+    list-style-type:none;
+    text-align:center;
+}

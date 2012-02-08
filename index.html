@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="assets/fontawesome-free-5.1.0-web/css/all.css">
+
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        
+        <header id='main-header'>
+            <h1>API documentation for TheApp</h1>
+            <div id="burger">
+                <i class="fa fa-bars"></i>
+            </div>
+        </header>
+        <ul id='menu'>
+            <li><a href="#youtube" class='nav-link'>youtube</a></li>
+            <li><a href="#twitter" class='nav-link'>twitter</a></li>
+            <li><a href="#instagram" class='nav-link'>instagram</a></li>
+            <li><a href="#facebook" class='nav-link'>facebook</a></li>
+            <li><a href="#whatsapp" class='nav-link'>whatsapp</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id='youtube'>
+            <header><h2>Youtube <i class="fa fas-youtube"></i></h2></header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, ipsam velit earum ullam excepturi doloribus voluptatem at necessitatibus labore ab quod in maxime libero exercitationem quam. In eius sunt dolorum.
+            </p>
+            <code>
+                whaterver
+            </code>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere placeat odio commodi eaque illum sed repudiandae aperiam aliquam itaque voluptatibus, dignissimos, fugit rem numquam quaerat, minima libero earum sapiente!</li>
+            </ul>
+        </section>
+        <section class="main-section" id="twitter">
+            <header><h2>Twitter <i class=" fa fa-twitter"></i></h2></header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, ipsam velit earum ullam excepturi
+                doloribus voluptatem at necessitatibus labore ab quod in maxime libero exercitationem quam. In eius sunt
+                dolorum.
+            </p>
+            <code></code>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere placeat odio commodi eaque
+                    illum sed repudiandae aperiam aliquam itaque voluptatibus, dignissimos, fugit rem numquam quaerat,
+                    minima libero earum sapiente!</li>
+            </ul>
+        </section>
+        <section class="main-section" id="instagram">
+            <header><h2>Instagram <i class="fa fa-instagram"></i></h2></header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, ipsam velit earum ullam excepturi
+                doloribus voluptatem at necessitatibus labore ab quod in maxime libero exercitationem quam. In eius sunt
+                dolorum.
+            </p>
+            <code></code>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere placeat odio commodi eaque
+                    illum sed repudiandae aperiam aliquam itaque voluptatibus, dignissimos, fugit rem numquam quaerat,
+                    minima libero earum sapiente!</li>
+            </ul>
+        </section>
+        <section class="main-section" id="facebook">
+            <header><h2>facebook <i class="fa fa-facebook"></i></h2></header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, ipsam velit earum ullam excepturi
+                doloribus voluptatem at necessitatibus labore ab quod in maxime libero exercitationem quam. In eius sunt
+                dolorum.
+            </p>
+            <code></code>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere placeat odio commodi eaque
+                    illum sed repudiandae aperiam aliquam itaque voluptatibus, dignissimos, fugit rem numquam quaerat,
+                    minima libero earum sapiente!</li>
+            </ul>
+        </section>
+        <section class="main-section" id="whatsapp">
+            <header><h2>whatsapp <i class="fa fa-whatsapp"></i></h2></header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, ipsam velit earum ullam excepturi
+                doloribus voluptatem at necessitatibus labore ab quod in maxime libero exercitationem quam. In eius sunt
+                dolorum.
+            </p>
+            <code></code>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere placeat odio commodi eaque
+                    illum sed repudiandae aperiam aliquam itaque voluptatibus, dignissimos, fugit rem numquam quaerat,
+                    minima libero earum sapiente!</li>
+            </ul>
+        </section>
+    </main>
+    <footer id='footer'>
+        <p>This is an FCC Challenge. Joel Kaigarula</p>
+    </footer>
+    <script>
+        const bars = document.querySelector('#burger');
+        const menu = document.querySelector('#menu'); 
+        bars.addEventListener('click',()=>{
+            if(menu.classList.contains('open')){
+                menu.classList.remove('open')
+            }else{
+            menu.classList.add('open')
+            }
+        })
+    </script>
+</body>
+</html>

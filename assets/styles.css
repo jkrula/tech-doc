@@ -1,0 +1,75 @@
+/* resets */
+html,body,nav,header,h1,h2,ul,ul,li,a,main,p,code,section,footer{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size:inherit;
+}
+
+/* colors */
+:root{
+    --dark: #333;
+    --light: #666;
+    --lighter: #ddd;
+    --headings: rgb(3, 3, 65);
+}
+body{
+    color: var(--light);
+    font-family: nunito, sans-serif;
+}
+/* header */
+/* flex the navbar instead */
+#main-header{
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size:1.4rem;
+    
+    border-bottom: 1px dotted var(--light);
+}
+#menu{
+    display:none;
+    
+}
+#menu.open{
+    display:block;
+    
+    list-style-type:none;   
+    background-color:var(--headings);
+    text-align:center;
+}
+
+#menu.open a{
+    display:block;
+    color: var(--lighter);
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: background-color 0.2s ease-out;
+}
+#menu.open a:hover{
+    background-color: lightblue;
+    font-weight: bold;
+    color: var(--dark);
+}
+#main-doc{
+    padding: 0 1rem;
+    margin-top: 1rem;
+    line-height: 1.3rem;
+}
+h1,h2{
+    color: var(--headings);
+}
+
+.main-section header{
+padding: 1rem 0;    
+
+}
+
+#footer{
+    padding: 2rem;
+    margin-top: 1rem;
+    background: var(--dark);
+    color: var(--lighter); 
+    text-align:center;
+}

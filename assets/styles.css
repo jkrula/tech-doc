@@ -11,7 +11,8 @@ html,body,nav,header,h1,h2,ul,ul,li,a,main,p,code,section,footer{
     --dark: #333;
     --light: #666;
     --lighter: #ddd;
-    --headings: rgb(3, 3, 65);
+    --darkblue: rgb(3, 3, 65);
+    --white: #fff;
 }
 body{
     color: var(--light);
@@ -19,23 +20,32 @@ body{
 }
 /* header */
 /* flex the navbar instead */
-#main-header{
-    display:flex;
+#navbar{
+    display: flex;
     justify-content: space-between;
     padding: 1rem;
-    font-size:1.4rem;
-    
+    font-size: 1.4rem;
+    flex-wrap: wrap;
     border-bottom: 1px dotted var(--light);
 }
+#main-header{
+    flex: 1 1 90%;
+}
+#burger{
+    flex: 0 0 10%;
+    text-align:right;
+}
+
 #menu{
     display:none;
-    
 }
 #menu.open{
     display:block;
-    
+    flex: 1 0 0;
+    font-size: 1rem;
+    margin-top: 1rem;
     list-style-type:none;   
-    background-color:var(--headings);
+    background-color:var(--darkblue);
     text-align:center;
 }
 
@@ -43,6 +53,7 @@ body{
     display:block;
     color: var(--lighter);
     padding: 0.8rem 1rem;
+    border-bottom: 1px dotted var(--light);
     text-decoration: none;
     text-transform: capitalize;
     transition: background-color 0.2s ease-out;
@@ -58,18 +69,26 @@ body{
     line-height: 1.3rem;
 }
 h1,h2{
-    color: var(--headings);
+    color: var(--darkblue);
 }
 
 .main-section header{
 padding: 1rem 0;    
 
 }
-
-#footer{
+code{
+    background-color: var(--dark);
+    margin: 1rem 0;
+    display:block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: var(--white);
+}
+footer{
     padding: 2rem;
     margin-top: 1rem;
     background: var(--dark);
     color: var(--lighter); 
     text-align:center;
 }
+

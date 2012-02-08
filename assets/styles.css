@@ -35,9 +35,7 @@ h2,h1{
 h1{
     font-size: 1.4rem;
 }
-h2{
-    font-size: 1.2rem;
-}
+
 #navbar{
     display: flex;
     flex-wrap:wrap;
@@ -96,7 +94,7 @@ pre{
 }
 .main-section header{
     margin-bottom: 0.4rem;
-    
+    text-transform: uppercase;
 }
 .main-section:last-of-type{
     border:none;
@@ -106,6 +104,7 @@ pre{
 }
 .main-section ul{
     padding-left: 1rem;
+    
 }
 
 #footer{
@@ -141,4 +140,55 @@ pre{
     font-size: 0.9rem;
     list-style-type:none;
     text-align:center;
+}
+
+/* tablet size + up styles */
+@media screen and (min-width: 768px){
+    body>.container{
+        display: flex;
+    }
+    #burger{
+        display: none;
+    }
+    #menu{
+        display:block;
+        background-color: var(--white);
+    }
+    #menu a{
+        color: var(--dark);
+    }
+    #menu a:hover{
+        color: var(--white);
+        font-weight:normal;
+        
+    }
+    #navbar{
+        flex-direction:column;
+        position: fixed;
+        margin-top: 1rem;
+        padding-left: 0.5rem;
+        
+        left: 0;
+        top: 0;
+        width: 20vw;
+        height: 100vh;
+        z-index: 0;
+    }
+    #main-header{
+        margin-bottom: 0.2rem;
+        padding-left: 0.4rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px dotted var(--light);
+        flex: 0;
+    }
+    #main-doc{
+        width: 70vw;
+        margin-left: auto;
+        
+        
+    }
+    #footer{
+        position:relative;
+        margin-top: 2rem;   
+    }
 }

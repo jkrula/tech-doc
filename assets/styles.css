@@ -11,12 +11,15 @@ html,body,nav,header,h1,h2,h3,h4,i,ul,li,a,pre,code,main,p,code,section,footer{
     --dark: #333;
     --light: #666;
     --lighter: #ddd;
-    --main: rgb(3, 3, 65);
+    --main: rgb(4, 60, 90);
     --light-main: lightblue;
     --white: #fff;
 }
 html,body{
     height: 100%;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     color: var(--light);

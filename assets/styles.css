@@ -154,9 +154,14 @@ pre{
         display:block;
         background-color: var(--white);
     }
+    #menu li{
+        margin-bottom: 2rem;
+    }
     #menu a{
         color: var(--dark);
+        
     }
+
     #menu a:hover{
         color: var(--white);
         font-weight:normal;
@@ -167,7 +172,6 @@ pre{
         position: fixed;
         margin-top: 1rem;
         padding-left: 0.5rem;
-        
         left: 0;
         top: 0;
         width: 20vw;

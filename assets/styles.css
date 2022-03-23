@@ -11,7 +11,6 @@ html,body,nav,header,h1,h2,h3,h4,i,ul,li,a,pre,code,main,p,code,section,footer{
     --dark: #333;
     --light: #666;
     --lighter: #ddd;
-    --main: rgb(4, 60, 90);
     --light-main: rgb(83, 80, 83);
     --white: #fff;
 }
@@ -114,14 +113,14 @@ pre{
     color: var(--lighter);
 }
 #footer a{
-    color: var(--light-main);
-    border-bottom: 1px dotted var(--light-main);
+    color: #fff;
+    border-bottom: 1px dotted #fff;
     text-decoration:none;
     font-weight:normal;
 }
 #footer a:hover{
     color: var(--white);
-    font-weight: bold;
+    border-bottom: 1px solid #fff;
 }
 #footer h3{
     text-align:center;
@@ -176,7 +175,7 @@ pre{
         left: 0;
         top: 0;
         width: 20vw;
-        height: 100vh;
+        border-bottom:none;
         z-index: 0;
     }
     #main-header{
@@ -194,6 +193,5 @@ pre{
     }
     #footer{
         position:relative;
-        margin-top: 2rem;   
     }
 }

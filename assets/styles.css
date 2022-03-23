@@ -12,7 +12,7 @@ html,body,nav,header,h1,h2,h3,h4,i,ul,li,a,pre,code,main,p,code,section,footer{
     --light: #666;
     --lighter: #ddd;
     --main: rgb(4, 60, 90);
-    --light-main: lightblue;
+    --light-main: rgb(83, 80, 83);
     --white: #fff;
 }
 html,body{
@@ -51,7 +51,7 @@ h1{
     display:none;
     margin-top: 0.2rem;
     list-style-type:none;
-    background-color: var(--main);
+    background-color: var(--dark);
     flex: 1
 }
 
@@ -71,8 +71,6 @@ h1{
 }
 .nav-link:hover{
     background-color: var(--light-main);
-    color: var(--main);
-    font-weight:bold;
 }
 #main-header{
     flex: 1 80%;
